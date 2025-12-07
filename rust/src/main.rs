@@ -1,4 +1,8 @@
 mod v1;
+
+#[cfg(test)]
+mod tests;
+
  use v1::items::{Book, Dvd};
  use v1::catalog::Catalog;
  use v1::member::Member;
