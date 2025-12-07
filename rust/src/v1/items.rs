@@ -4,7 +4,7 @@ pub trait Item {
     fn title(&self) -> &str;
     
     fn days_allowed(&self) -> u32;
-    
+    #[allow(dead_code)]
     fn description(&self) -> String {
         format!("{} ({} days)", self.title(), self.days_allowed())
     }

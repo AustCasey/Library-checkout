@@ -26,7 +26,7 @@ impl Catalog {
     pub fn get(&self, item_id: &str) -> Option<&dyn Item> {
         self.items.get(item_id).map(|boxed| boxed.as_ref())
     }
-    
+    #[allow(dead_code)]
     pub fn contains(&self, item_id: &str) -> bool {
         self.items.contains_key(item_id)
     }
