@@ -58,6 +58,6 @@ jobs:
       working-directory: ./rust
       run: |
         cargo clippy -- -D warnings
-```
+
 
 ---yaml
